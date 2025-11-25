@@ -104,7 +104,7 @@ class GmailCrewAi():
 		)
 
 	@agent
-	def organizer(self) -> Agent:
+	def organizer(self) -> Agent: #This is the gmail organize tool
 		"""The email organization agent."""
 		print("IN here 28")
 		return Agent(
@@ -114,7 +114,7 @@ class GmailCrewAi():
 		)
 		
 	@agent
-	def response_generator(self) -> Agent:
+	def response_generator(self) -> Agent: #This generates a response for the emails. It's a bit long to do.
 		"""The email response generator agent."""
 		print("IN here 29")
 		return Agent(
@@ -123,8 +123,8 @@ class GmailCrewAi():
 			llm=self.llm,
 		)
 	
-	@agent
-	def notifier(self) -> Agent:
+	@agent 
+	def notifier(self) -> Agent: #This shit should be deleted.
 		"""The email notification agent."""
 		print("IN here 29-b")
 		return Agent(
@@ -134,7 +134,7 @@ class GmailCrewAi():
 		)
 
 	@agent
-	def cleaner(self) -> Agent:
+	def cleaner(self) -> Agent: #This shit deletes the email.
 		"""The email cleanup agent."""
 		print("IN here 30")
 		return Agent(
@@ -143,9 +143,9 @@ class GmailCrewAi():
 			llm=self.llm,
 		)
 
-######The tasks start below hereee
+######The tasks start below here
 	@task
-	def categorization_task(self) -> Task:
+	def categorization_task(self) -> Task: 
 		"""The email categorization task."""
 		print("IN here 31")
 		return Task(
