@@ -1,0 +1,10 @@
+torch
+torchvision
+tensorflow>=2.0.0    # for keras Tokenizer (we'll import from tf.keras)
+scikit-learn
+pandas
+numpy
+tqdm
+python-dotenv
+sklearn
+nltk
